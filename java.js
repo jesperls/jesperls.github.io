@@ -64,7 +64,7 @@ document.addEventListener("mousemove",function(event){
 
 function mainLoop(){
 	document.getElementById("sound").play();
-	document.getElementById("tradet").click();
+	//document.getElementById("tradet").click();
 	if(1==1)
 	{
 	var erik = document.getElementById("ERIK");
