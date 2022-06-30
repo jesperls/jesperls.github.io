@@ -41,6 +41,7 @@ var moveX8 = -1;
 var moveY8 = -1;
 var timer = 0;
 var loadBar;
+var timer_2 = 100;
 var loadProc = 100.0;
 function start(){
 	//document.getElementById("sound").controls = false;
@@ -64,7 +65,7 @@ document.addEventListener("mousemove",function(event){
 
 function mainLoop(){
 	document.getElementById("sound").play();
-	//document.getElementById("tradet").click();
+	document.getElementById("tradet").click();
 	if(1==1)
 	{
 	var erik = document.getElementById("ERIK");
@@ -276,7 +277,7 @@ function mainLoop(){
 		body.style.backgroundColor = "magenta";
 		text.style.color="blue";
 		colNum = 0;
-		loadProc-= 0.03;
+		loadProc-= 0.1;
 		loadBar.style.width = loadProc+'%';
 		template.style.fontSize="110px";
 	}
